@@ -1,0 +1,27 @@
+.layout-results-card {
+	display: flex;
+	flex-direction: row;
+
+	width: 600px;
+	height: 400px;
+
+	border-radius: 24px;
+	box-shadow: 2px 2px 6px 0px var(--light-lavender);
+}
+
+@media (min-width: 376px) and (max-width: 601px) {
+	.layout-results-card {
+		width: 375px;
+		height: 350px;
+	}
+}
+
+@media (max-width: 376px) {
+	.layout-results-card {
+		flex-direction: column;
+		box-shadow: none;
+		width: 100vw;
+		height: 100vh;
+		border-radius: none;
+	}
+}
